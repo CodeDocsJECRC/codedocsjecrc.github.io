@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:site_name" content="CodeDocs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:url" content="{{ page.url }}" />
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    <span class="screen"></span>
+    <div class="mobile-menu-trigger">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var burger = $('.mobile-menu-trigger'),
+        mask = $('.screen');
+
+    $('.mobile-menu-trigger, .screen').click(function(){
+      if(burger.hasClass('is-active')) {
+          burger.removeClass('is-active');
+          mask.fadeOut(300);
+          $('body').removeClass('menu-is-active');
+          $('#main-nav').addClass('mobile-only');
+        } else {
+          mask.fadeIn(300);
+          burger.addClass('is-active');
+          $('body').addClass('menu-is-active');
+          $('#main-nav').removeClass('mobile-only');
+        }
+    });
+
+    $(document).ready(function () {
+      $('.banner').append("<span class='bg-orange bg-gradient'></span><span class='bg-purple bg-gradient'></span><span class='bg-blue bg-gradient'></span>");
+
+      var gradient = $('.banner'),
+  			colors = $('.bg-gradient'),
+  			active =  Math.round(Math.random() * 2),
+  			pause = 6000,
+  			count = colors.length,
+  			i = 0;
+
+  		colors.eq(active).addClass('is-active initial');
+  		setTimeout(transition,pause);
+  		function transition(){
+  			colors.eq(i).removeClass('is-active initial');
+  			if( ++i >= count ){
+  				i = 0;
+  			}
+  			colors.eq(i).addClass('is-active');
+  			setTimeout(transition, pause);
+  		}
+    })
+    </script>
+  </body>
+</html>

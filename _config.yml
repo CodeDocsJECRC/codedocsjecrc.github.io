@@ -1,0 +1,27 @@
+name: CodeDocs
+description: CodeDocs Official Developers Group
+url: http://CodeDocs.org
+
+license: MIT License
+licenseUrl: http://opensource.org/licenses/MIT
+
+exclude: ['README.md', 'LICENSE', 'Gemfile.lock', 'Gemfile', 'vendor']
+
+encoding: "utf-8"
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+email: codedocsjecrc@gmail.com
+facebook: codedocs
+twitter: codedocs
+github: CodeDocsJECRC
+medium: codedocs
+instagram: codedocs
+meetup: codedocs
+youtube: codedocs
+
+sitemap:
+    filename: "sitemap.xml"
+    include_posts:
+        - "/index.html"
+        - "/events/index.html"
