@@ -689,6 +689,29 @@ header{
   }
 }
 
+//sponsors
+.sponsors{
+  z-index: 5;
+  background: #fff;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 70px 0;
+  .container{
+    z-index: 8;
+    text-align: center;
+    text-transform: uppercase;
+    background: #fff;
+    color: $prime;
+    .sponsors-inner{
+      padding: 30px 0;
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+    }
+  }
+}
+
 //slack
 .slack{
   z-index: 3;
