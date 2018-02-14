@@ -1,3 +1,6 @@
+---
+---
+
 @import url('https://fonts.googleapis.com/css?family=Nova+Mono');
 //colors
 $background: #1A1F21;
@@ -79,6 +82,9 @@ hr{
   border-image: linear-gradient(to left, lighten($prime, 30) 1%, $prime 100%);
   border-image-slice: 1;
   border-radius: 8px;
+}
+.highlight{
+  color: lighten($prime, 20);
 }
 
 //container
@@ -814,5 +820,28 @@ footer{
   color: $background;
   &:before{
     background: #fff;
+  }
+}
+
+ul#list-bullets{
+  li::before{
+    content: "\f118  ";
+    font-family: FontAwesome;
+  }
+}
+
+table.calendar-table{
+  width: 100%;
+  border-collapse: collapse;
+  th, td{
+    border: 1px solid lighten($prime, 60);
+    padding: 4px;
+  }
+  th{
+    color: #fff;
+    background: lighten($prime, 10);
+  }
+  tr:nth-child(even){
+    background-color: #f2f2f2;
   }
 }

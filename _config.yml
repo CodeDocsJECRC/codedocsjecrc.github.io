@@ -25,3 +25,6 @@ sitemap:
     include_posts:
         - "/index.html"
         - "/events/index.html"
+
+sass:
+  style: compressed
