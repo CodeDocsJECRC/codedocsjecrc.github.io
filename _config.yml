@@ -12,13 +12,14 @@ markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 email: codedocsjecrc@gmail.com
-facebook: CodeDocsJECRC
-twitter: codedocs
+facebook: codedocsjecrc0
+twitter: codedocsjecrc
 github: CodeDocsJECRC
 medium: codedocs
 instagram: codedocs
 meetup: codedocs
 youtube: codedocs
+linkedin: codedocs
 
 sitemap:
     filename: "sitemap.xml"
