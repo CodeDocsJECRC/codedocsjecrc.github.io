@@ -845,3 +845,57 @@ table.calendar-table{
     background-color: #f2f2f2;
   }
 }
+
+.gsoc-header {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.gsoc-about {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3rem;
+  .btn {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+}
+
+.gsoc-speakers {
+  padding: 10px;
+  font-size: 1.3rem;
+  h2, .speaker-content {
+    text-align: center;
+  }
+  .speakers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .speaker {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: inherit;
+    text-align: center;
+    padding: 20px;
+    .speaker-img {
+      align-self: center;
+      width: 200px;
+      border: 1px solid #07B39B;
+      border-radius: 50%;
+    }
+    .speaker-info {
+      margin-top: 5px;
+    }
+  }
+}
+
+.gsoc-itinerary {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 10px;
+}
