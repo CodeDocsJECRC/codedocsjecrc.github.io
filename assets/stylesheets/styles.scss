@@ -846,9 +846,62 @@ table.calendar-table{
   }
 }
 
+// Styling GSOC Pages
+
 .gsoc-header {
-  text-align: center;
-  padding-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  .logo_rat{
+    width: 25vmin;
+    height: auto;
+  }
+  .mascot{
+    width: 25vmin;
+    height: auto;
+  }
+  .logo_gsoc{
+    width: 50vw;
+  }
+  div{
+    flex-grow: 1;
+    margin: auto 0;
+    text-align: center;
+    padding: 10px;
+  }
+  img{
+    margin: auto;
+  }
+  #gsoc-heading-cont{
+    flex-grow: 3 !important;
+  }
+  .main-heading{
+    font-size: 4vmax;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: #757575;
+  }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .mascot{
+      display: none;
+    }
+    .rat-cont{
+      order: 2;
+      flex-grow: 1;
+    }
+    .logo_gsoc{
+      width: 90vw;
+    }
+    div{
+      padding: 0 !important;
+    }
+    .gsoc-heading-cont{
+      order: 1;
+      flex-grow: 1;
+    }
+  }
 }
 
 .gsoc-about {
@@ -862,6 +915,7 @@ table.calendar-table{
   }
   .about-content {
     text-align: left;
+    padding: 20px;
     ul {
       margin-left: 10px;
     }
@@ -872,7 +926,7 @@ table.calendar-table{
 }
 
 .gsoc-speakers {
-  padding: 10px;
+  padding: 50px 10px 50px 10px;
   font-size: 1.3rem;
   h2, .speaker-content {
     text-align: center;
@@ -909,7 +963,7 @@ table.calendar-table{
 .gsoc-itinerary {
   text-align: center;
   font-size: 1.3rem;
-  padding: 10px;
+  padding: 50px 10px 50px 10px;
   .itinerary {
     table {
       margin: 0 auto 0 auto;
