@@ -848,17 +848,26 @@ table.calendar-table{
 
 .gsoc-header {
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding-top: 10px;
 }
 
 .gsoc-about {
   text-align: center;
-  padding: 10px;
   font-size: 1.3rem;
+  padding: 10px 20px 10px 20px;
   .btn {
   font-size: 1.3rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+  .about-content {
+    text-align: left;
+    ul {
+      margin-left: 10px;
+    }
+    li:before {
+      content:'*'
+    }
   }
 }
 
@@ -890,6 +899,9 @@ table.calendar-table{
     }
     .speaker-info {
       margin-top: 5px;
+      .btn {
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -898,4 +910,22 @@ table.calendar-table{
   text-align: center;
   font-size: 1.3rem;
   padding: 10px;
+  .itinerary {
+    table {
+      margin: 0 auto 0 auto;
+      padding: 5px;
+    }
+    thead {
+      background: $background;
+      color: #fff;
+    }
+    table, th, td {
+      border: 1px solid $background;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+  }
+
 }
